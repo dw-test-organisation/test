@@ -24,7 +24,9 @@ jobs:
         run: npm install -g yarn
 
       - name: Install dependencies
-        run: yarn install
+        run: |
+        yarn install
+        echo "dependencies installed!"
 
       - name: lint
         run: yarn lint:ci
