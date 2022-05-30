@@ -25,8 +25,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-        yarn install
-        echo "dependencies installed!"
+          yarn install
+          echo "dependencies installed!"
 
       - name: lint
         run: yarn lint:ci
